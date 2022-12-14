@@ -49,4 +49,4 @@ async def create_upload_file(file: UploadFile | None = None):
     else:
         contents = await file.read()
         print(contents)
-        return {"filename": contents}
+        return {"content": contents}
