@@ -19,7 +19,7 @@ const FileInput = () => {
             "Content-Type": "multipart/form-data",
           },
         })
-        .then((res) => console.log(res.data.filename));
+        .then((res) => console.log(res.data));
     } catch (error) {
       console.log(error);
     }
